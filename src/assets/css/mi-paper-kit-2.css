@@ -1,0 +1,368 @@
+/* Put to allow the background image */
+html, body {
+  height:100%;
+}
+.bg-img {
+  /* The image used */
+  background-image: url('../img/teams.jpg');
+
+  /* Control the height of the image */
+  /* Displays just for content shown within browser window size. If you scroll to reveal hidden areas it is blank so used min-height instead of height: 100%;*/
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-bg-img {
+  background: linear-gradient(#fff, #5386D9);
+
+  /* Control the height of the image */
+  /* Displays just for content shown within browser window size. If you scroll to reveal hidden areas it is blank so used min-height instead of height: 100%;*/
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Adds the dark filter over the background image */
+.my-filter {
+  background-color: rgba(0,0,0,0.5);
+  /* Displays just for content shown within browser window size. If you scroll to reveal hidden areas it is blank so used min-height instead of height: 100%;*/
+  min-height: 800px;
+}
+
+/* a[id="homeOption"] {
+  color: #B29D00;
+} */
+
+a[id="homeOption"]:hover {
+  color: red;
+}
+
+/* Code to style the input placeholder text  */
+::-webkit-input-placeholder {
+    color: #000 !important;
+    opacity: 0.5 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000 !important;
+    opacity: 0.5 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000 !important;
+    opacity: 0.5 !important;
+}
+
+:-ms-input-placeholder {
+   color: #000 !important;
+   opacity: 0.5 !important;
+}
+
+/* Took the button css to here so we can still have a danger button color */
+.btn-mi-sports {
+  background-color: #3B3FFF;/*#f5593d;*/ /*Primary color */
+  border: 1px solid #3B3FFF;/*#f5593d;*/
+  color: #FFFFFF;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*  */
+.btn-mi-sports:hover, .btn-mi-sports:focus, .btn-mi-sports:active, .btn-mi-sports.active, .show > .btn-mi-sports.dropdown-toggle {
+  background-color: #B29D00;/*#f33816;*//*Secondary color */
+  color: #FFFFFF;
+  border-color: #B29D00;/*#f33816;*/
+}
+.btn-mi-sports .caret {
+  border-top-color: #FFFFFF;
+}
+.btn-mi-sports.btn-link {
+  color: #FFF; /*#f5593d;*/
+}
+.btn-mi-sports.btn-link:hover, .btn-mi-sports.btn-link:focus, .btn-mi-sports.btn-link:active, .btn-mi-sports.btn-link.active, .open > .btn-mi-sports.btn-link.dropdown-toggle {
+  background-color: transparent;
+  color: #B29D00; /*#f33816;*/
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Next and previous buttons  */
+.pagination > .mi-page-item > .page-link,
+.pagination > .mi-page-item > span,
+.pagination > .mi-page-item:first-child > .page-link,
+.pagination > .mi-page-item:first-child > span,
+.pagination > .mi-page-item:last-child > .page-link,
+.pagination > .mi-page-item:last-child > span {
+  background-color: transparent;
+  border: 2px solid #B29D00;
+  border-radius: 20px;
+  color: #B29D00;
+  height: 36px;
+  margin: 0 2px;
+  min-width: 36px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.pagination > .mi-page-item:hover > .page-link,
+.pagination > .mi-page-item:hover > span,
+.pagination > .mi-page-item:first-child:hover > .page-link,
+.pagination > .mi-page-item:first-child:hover > span,
+.pagination > .mi-page-item:last-child:hover > .page-link,
+.pagination > .mi-page-item:last-child:hover > span {
+  background-color: transparent;
+  border: 2px solid #B29D00;
+  border-radius: 20px;
+  color: #B29D00;
+  height: 36px;
+  margin: 0 2px;
+  min-width: 36px;
+  font-weight: 600;
+  opacity: 1;
+}
+.pagination > .mi-page-item.active > .page-link,
+.pagination > .mi-page-item.active > span,
+.pagination > .mi-page-item:first-child.active > .page-link,
+.pagination > .mi-page-item:first-child.active > span,
+.pagination > .mi-page-item:last-child.active > .page-link,
+.pagination > .mi-page-item:last-child.active > span {
+  background-color: #B29D00;
+  /* border: 2px solid #B29D00; */
+  border-radius: 20px;
+  color: #fff;
+  height: 36px;
+  margin: 0 2px;
+  min-width: 36px;
+  font-weight: 600;
+  opacity: 1;
+}
+.mi-page-item:first-child .page-link,
+.mi-page-item:last-child .page-link {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.pagination .mi-page-item .page-link .fa {
+  width: auto;
+  font-weight: 600;
+}
+
+div[class="login-forgot-page"]:not(:first-of-type){
+  display: none;
+}
+
+/* Hides all the other tabs except the first */
+/* Side note make sure there is no space between div and the [class="tab"] */
+
+div[class="page"]:not(:first-of-type){
+  display: none;
+}
+
+#create-account-btn {
+  display: none;
+}
+
+#next-btn {
+  display: block;
+}
+
+#prev-btn {
+  display: none;
+}
+
+.mi-nav-tabs-navigation:last-child {
+  border-bottom: 0 none;
+}
+.mi-nav-tabs-navigation:last-child .nav-stacked {
+  /* border-right: 1px solid #F1EAE0; */
+  border-right: 1px solid #5386D9;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.mi-nav-tabs-navigation:last-child .nav-stacked .nav-item .nav-link {
+  padding: 7px 25px;
+}
+
+/*             Navigation menu                */
+/*             Navigation Tabs                 */
+.mi-nav-tabs-navigation {
+  text-align: center;
+  /* border-bottom: 1px solid #F1EAE0; */
+  border-bottom: 1px solid #5386D9;
+  margin-bottom: 30px;
+}
+.mi-nav-tabs-navigation .nav > .nav-item > .nav-link {
+  padding-bottom: 20px;
+}
+
+.mi-nav-tabs-wrapper {
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-left: 1.25%;
+  margin-right: 1.25%;
+  position: relative;
+  width: auto;
+}
+
+.mi-nav-tabs {
+  border-bottom: 0 none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mi-nav-tabs .nav-item .nav-link {
+  border: 0 none;
+  /* color: #A49E93; */
+  color: #7BADFF;
+  background-color: transparent;
+}
+.mi-nav-tabs .nav-item .nav-link:hover {
+  /* color: #66615b; */
+  color: #284E8C;
+}
+.mi-nav-tabs .nav-item .nav-link.active {
+  /* color: #66615b; */
+  color: #284E8C;
+}
+.mi-nav-tabs .nav-item {
+  /* color: #66615b; */
+  color: #284E8C;
+  position: relative;
+}
+.mi-nav-tabs .nav-item .nav-link.active,
+.mi-nav-tabs .nav-item .nav-link.active:hover,
+.mi-nav-tabs .nav-item .nav-link.active:focus {
+  background-color: transparent;
+  border: 0 none;
+}
+.mi-nav-tabs .nav-item .nav-link.active:after,
+.mi-nav-tabs .nav-item .nav-link.active:hover:after,
+.mi-nav-tabs .nav-item .nav-link.active:focus:after {
+  /* border-bottom: 11px solid #FFFFFF; */
+  border-bottom: 11px solid #5386D9;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  bottom: 5px;
+}
+.mi-nav-tabs .nav-item .nav-link.active:before,
+.mi-nav-tabs .nav-item .nav-link.active:hover:before,
+.mi-nav-tabs .nav-item .nav-link.active:focus:before {
+  /* border-bottom: 11px solid #F1EAE0; */
+  border-bottom: 11px solid #5386D9;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  bottom: 6px;
+}
+.mi-nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+}
+.mi-nav-tabs .dropdown-menu {
+  margin-top: -6px;
+  margin-left: -46px;
+  border-radius: 8px;
+}
+.mi-nav-tabs .dropdown-menu .dropdown-item:hover,
+.mi-nav-tabs .dropdown-menu .dropdown-item.active {
+  color: #FFFFFF;
+  background-color: #68B3C8;
+}
+.mi-nav-tabs .dropdown-menu :before {
+  border-bottom: 11px solid #F1EAE0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -11px;
+}
+.mi-nav-tabs .dropdown-menu :before :after {
+  border-bottom: 11px solid #FFFCF5;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -10px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 15px 15px;
+}
+
+.form label {
+  padding: 5px 0 0 0;
+}
+
+.mi-btn-danger {
+  background-color: #f5593d;
+  border: 1px solid #f5593d;
+  color: #66615B;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*  */
+.mi-btn-danger:hover, .mi-btn-danger:focus, .mi-btn-danger:active, .mi-btn-danger.active, .show > .mi-btn-danger.dropdown-toggle {
+  background-color: #f33816;
+  color: #66615B;/*#403D39;*/
+  border-color: #f33816;
+}
+.mi-btn-danger .caret {
+  border-top-color: #FFFFFF;
+}
+
+.mi-btn-danger.btn-link {
+  color: #9A9A9A; 
+}
+.mi-btn-hidden{
+    color:white;
+}
+.mi-btn-hidden.btn-link{
+    color:white;
+    border: 0px;
+}
+.mi-btn-hidden:hover{
+    color:white;
+    border: 0px;
+}
+
+.mi-btn-danger.btn-link:hover, .mi-btn-danger.btn-link:focus, .mi-btn-danger.btn-link:active, .mi-btn-danger.btn-link.active, .open > .mi-btn-danger.btn-link.dropdown-toggle {
+  background-color: transparent;
+  color: #f33816;
+}
+.mi-btn-danger.btn-link .caret {
+  border-top-color: #f5593d;
+}
+.mi-btn-danger .caret {
+  border-top-color: #66615B;
+}

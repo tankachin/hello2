@@ -1,0 +1,142 @@
+<body >
+
+<div class="main">
+  <div >
+
+    <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+      <h5 class="card-title" align="center">Personal Details</h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>First Name/s</label>
+            <input type="text" formControlName="firstName" class="form-control" ng-model="First Name"
+                   pattern="[A-Za-z]{2,}" title="Please Enter a Valid First name" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control" ng-model="Last Name"
+                   pattern="[A-Za-z]{2,}" title="Please Enter a Valid Last name" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="row">
+              <div class="col-md-3 ">
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" formControlName="genderRadio" id="maleGender"
+                           value="Male"> Male
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" formControlName="genderRadio" id="femaleGender"
+                           value="Female" checked> Female
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="form-group">
+            <label>Date of birth</label>
+            <input type="date" formControlName="dateOfBirth" class="form-control" ng-model="Date of birth" required>
+          </div>
+        </div>
+      </div>
+      <h5 class="card-title" align="center">Contact and Accounts details</h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Home Address</label>
+            <input type="text" formControlName="homeAddress" class="form-control" ng-model="Home Address"
+                   pattern="[0-9a-zA-Z]{.}" title="Please Enter a Address">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 pr-1">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" formControlName="city" class="form-control" ng-model="City" pattern="[A-Za-z]{2,}"
+                   title="Please Enter a Valid City">
+          </div>
+        </div>
+        <div class="col-md-4 px-1">
+          <div class="form-group">
+            <label>Country</label>
+            <input type="text" formControlName="country" class="form-control" ng-model="Country" pattern="[A-Za-z]{.}"
+                   title="Please Enter a Valid Country">
+          </div>
+        </div>
+        <div class="col-md-4 pl-1">
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="number" formControlName="postalCode" class="form-control" ng-model="Postal Code"
+                   pattern="[0-9]" title="Please enter a vaild Postal Code">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" formControlName="phoneNumber" class="form-control" ng-model="phoneNumber"
+                   pattern="[0-9]{10,}" title="Please enter a vaild Phone Number">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Cellphone Number</label>
+            <input type="text" formControlName="cellNumber" class="form-control" ng-model="cellNumber"
+                   pattern="[0-9]{10,}" title="Please enter a vaild Cell Number">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label> Email Address</label>
+            <input type="email" formControlName="email" class="form-control" ng-model="Email"
+                   pattern="([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})" title="Please enter a valid Email Address"
+                   required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>New Password</label>
+            <input type="password" formControlName="password" class="form-control" ng-model="Enter a new Password"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   title="Password must be 8 or more characters and contain at least one number, lowercase and uppercase characters">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" formControlName="confirmPassword" class="form-control"
+                   ng-model="Please enter the new Password again">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit">Add Profile</button>
+      </div>
+
+    </form>
+
+  </div>
+</div><!-- form card register -->
+
+</body>

@@ -1,0 +1,183 @@
+.nav-tabs-navigation:last-child {
+  border-bottom: 0 none;
+}
+.nav-tabs-navigation:last-child .nav-stacked {
+  /* border-right: 1px solid #F1EAE0; */
+  border-right: 1px solid #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.nav-tabs-navigation:last-child .nav-stacked .nav-item .nav-link {
+  padding: 7px 25px;
+}
+/*             Navigation menu                */
+/*             Navigation Tabs                 */
+.nav-tabs-navigation {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+.nav-tabs-navigation .nav > .nav-item > .nav-link {
+  padding-bottom: 20px;
+}
+
+.nav-tabs-wrapper {
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-left: 1.25%;
+  margin-right: 1.25%;
+  position: relative;
+  width: auto;
+}
+
+.nav-tabs {
+  border-bottom: 0 none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-tabs .nav-item .nav-link {
+  border: 0 none;
+  color: #A49E93;
+  background-color: transparent;
+}
+.nav-tabs .nav-item .nav-link:hover {
+  color: #66615b;
+}
+.nav-tabs .nav-item .nav-link.active {
+  color: #66615b;
+}
+.nav-tabs .nav-item {
+  color: #66615b;
+  position: relative;
+}
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-link.active:hover,
+.nav-tabs .nav-item .nav-link.active:focus {
+  background-color: transparent;
+  border: 0 none;
+}
+.nav-tabs .nav-item .nav-link.active:after,
+.nav-tabs .nav-item .nav-link.active:hover:after,
+.nav-tabs .nav-item .nav-link.active:focus:after {
+  /* border-bottom: 11px solid #FFFFFF; */
+  border-bottom: 11px solid #A49E93;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  bottom: 5px;
+}
+.nav-tabs .nav-item .nav-link.active:before,
+.nav-tabs .nav-item .nav-link.active:hover:before,
+.nav-tabs .nav-item .nav-link.active:focus:before {
+  /* border-bottom: 11px solid #F1EAE0; */
+  border-bottom: 11px solid #000;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  bottom: 6px;
+}
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+}
+.nav-tabs .dropdown-menu {
+  margin-top: -6px;
+  margin-left: -46px;
+  border-radius: 8px;
+}
+.nav-tabs .dropdown-menu .dropdown-item:hover,
+.nav-tabs .dropdown-menu .dropdown-item.active {
+  color: #FFFFFF;
+  background-color: #68B3C8;
+}
+.nav-tabs .dropdown-menu :before {
+  border-bottom: 11px solid #F1EAE0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -11px;
+}
+.nav-tabs .dropdown-menu :before :after {
+  border-bottom: 11px solid #FFFCF5;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -10px;
+}
+
+/* Demo CSS code */
+.tim-row {
+  margin-bottom: 20px;
+}
+
+.tim-white-buttons {
+  background-color: #777777;
+}
+
+.typography-line {
+  padding-left: 25%;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.typography-line span {
+  bottom: 10px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  left: 0;
+  position: absolute;
+  width: 260px;
+  text-transform: none;
+}
+
+.tim-row {
+  padding-top: 60px;
+}
+
+.tim-row h3 {
+  margin-top: 0;
+}
+
+.offline-doc .page-header {
+  display: flex;
+  align-items: center;
+}
+
+.offline-doc .footer {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  bottom: 0;
+  color: #fff;
+  z-index: 1;
+}
+
+@media all and (min-width: 992px) {
+  .sidebar .nav>li.active-pro {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+}
+
+.card.card-upgrade .card-category {
+  max-width: 530px;
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+<div style="margin-left: 250px" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Weshnic Warehouse Admin </h5>
+
+</div>
+<div class=" sidenav ">
+  <a> <img src="/assets/img/Weshnicwarehouse.png"  alt="" >   </a>
+  <button class="dropdown-btn">Categories<i class="fa fa-caret-down"></i>
+  </button>s
+  <div class="dropdown-container">
+      <a routerLinkActive="active" routerLink="/category-list">View Categories</a>
+      <a routerLinkActive="active" routerLink="/create-category">Add Category</a>
+  </div>
+  <a routerLink=" '/customers' " routerLinkActive="active">Customers</a>
+  <ul>
+  <a routerLinkActive="active" routerLink="/Customers-list">View Customers</a>
+  <a routerLinkActive="active" routerLink="/create-Customer">Add Customer</a>
+  </ul>
+  <a routerLink=" '/departments' " routerLinkActive="active">Departments</a>
+  <ul>
+    <a routerLinkActive="active" routerLink="/department-list">View Departments</a>
+    <a routerLinkActive="active" routerLink="/create-department">Add Department</a>
+  </ul>
+  <a routerLink=" '/brands' " routerLinkActive="active">Brands</a>
+  <ul>
+    <a routerLinkActive="active" routerLink="/brand-list">View Brands</a>
+    <a routerLinkActive="active" routerLink="/create-brand">Add Brand</a>
+  </ul>
+  <a routerLink=" '/products' " routerLinkActive="active">Products</a>
+  <ul>
+    <a routerLinkActive="active" routerLink="/product-list">View Products</a>
+    <a routerLinkActive="active" routerLink="/create-product">Add Product</a>
+  </ul>
+  <a routerLink=" '/user' " routerLinkActive="active">Profile</a>
+</div>
+<router-outlet></router-outlet>

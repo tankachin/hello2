@@ -1,0 +1,34 @@
+ng generate class contacts/contact
+ng generate component contacts/contact-details
+ng generate component contacts/contact-list
+ng generate service contacts/contact
+
+ng generate class catergory/catergory
+ng generate component catergory/catergory-details
+ng generate component catergory/catergory-list
+ng generate service catergory/catergory
+cd
+ng generate class customers/customer
+ng generate component customers/customer-details
+ng generate component customers/customer-list
+ng generate service customers/customer
+
+ng generate class departments/department
+ng generate component departments/department-details
+ng generate component departments/department-list
+ng generate service departments/department
+
+ng generate class brands/brand
+ng generate component brands/brand-details
+ng generate component brands/brand-list
+ng generate service brands/brand
+
+ng generate class orders/order
+ng generate component orders/order-details
+ng generate component orders/order-list
+ng generate service orders/order
+
+ng generate class products/product
+ng generate component products/product-details
+ng generate component products/product-list
+ng generate service products/product
